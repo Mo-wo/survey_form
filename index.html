@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="../myPortfolio/script.js"></script>
+    <title>FCC: Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="container1">
+            <div id="menu-bar">
+                <div class ="menubar">
+                    <div class="menuicon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="child1">
+                        <div class ="codepenlogo">
+                            <a href="https://codepen.io/trending"><img src="https://tinyurl.com/j2f5zb56" alt="codepen-logo"></a>
+                        </div>
+                        <div class="fcc">
+                            <p><a href="https://codepen.io/freeCodeCamp/pen/NdrKKL">FCC: Survey Form</a></p>
+                            <div class="subFcc">
+                                <p><a href="https://codepen.io/freeCodeCamp">freeCodeCamp.org</a></p>
+                                <button class="follow"><a href="https://codepen.io/login?">+ Follow</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="child2">
+                        <div class="hart"><button><a href="https://codepen.io/login?"><span class="heart">&hearts;</span></a></button></div>
+                        <div class="changeview"><button><a href="https://codepen.io/freeCodeCamp/pen/NdrKKL"> View in Editor</a></button></div>
+                        <div class="signup"><a href="https://codepen.io/accounts/signup/user/free"><button>Sign Up</a></button></div>
+                        <div class="login"><a href="https://codepen.io/login"><button>Log In</a></button></div>
+                    </div>
+                </div>
+            </div> 
+            <main>
+                <div id="header">
+                    <h1 id="title">freeCodeCamp Survey Form</h1>
+                    <p id="description">Thank you for taking the time to help us improve the platform</p>
+                </div>
+                <form id="survey-form">
+                    <label class="form-fields" for="name" id="name-label"> Name
+                        <input class="form-input" name="name" type="text" id="name" placeholder="Enter your name"required>
+                    </label>
+                    <label class="form-fields" for="email" id="email-label">Email
+                        <input class="form-input" name="email" type="text" id="email" placeholder="Enter your Email"  required>
+                    </label>
+                    <label class="form-fields" for="number" id="number-label">Phone Number
+                        <input class="form-input" name="telephone"  type="number" id="text" placeholder="Enter your Number" required>
+                    </label>
+                    <label class="form-fields" for="number" id="number-label">Age(optional)
+                        <input class="form-input" name="age" type="number" id="number" min="0" max="30" placeholder="Age">
+                    </label>
+                    <p>Which option best describes your current role?</p>
+                    <label for="dropdown">
+                        <select id="dropdown" name="role">
+                            <option class="option" value="Select current role">Select current role</option>
+                            <option class="option" value="Student">Student</option>
+                            <option class="option" value="Full Time Job">Full Time Job</option>
+                            <option class="option" value="Full Time Learner">Full Time Learner</option>
+                            <option class="option" value="Prefer not to say">Prefer not to say</option>
+                            <option class="option" value="Other">Other</option>
+                        </select>
+                    </label>
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <label for="definitely"> 
+                            <input class="form-input" type="radio" id="definitely" value ="definitely" name="recommendation">Definitely
+                        </label>
+                        <label for="maybe"> 
+                            <input class="form-input" type="radio" id="maybe" value ="maybe" name="recommendation">Maybe
+                        </label>
+                        <label for="not-sure"> 
+                            <input class="form-input" type="radio" id="not-sure" value ="unsure" name="recommendation">Not sure
+                        </label>
+                    <p>What is your favorite feature of freeCodeCamp?</p>
+                    <label for="favorite-feature">
+                        <select id="favorite-feature" name="feature">
+                            <option value="Select an option">Select current role</option>
+                            <option value="Challenges">Challenges</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Community">Community</option>
+                            <option value="Open Source">Open Source</option>
+                        </select>
+                    </label>
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                        <label for="front-end"> 
+                            <input class="form-input" type="checkbox" id="front-end" value ="front-end" name="project-type">Front-end
+                        </label>
+                        <label for="back-end"> 
+                            <input class="form-input" type="checkbox" id="back-end" value ="back-end" name="project-type">Back-end
+                        </label>
+                        <label for="data-visualization"> 
+                            <input class="form-input" type="checkbox" id="data-visualization" value ="data-visualization" name="project-type">Data-Visualization
+                        </label>
+                        <label for="challenges"> 
+                            <input class="form-input" type="checkbox" id="challenges" value ="challenges" name="project-type">Challenges
+                        </label>
+                        <label for="open-source"> 
+                            <input class="form-input" type="checkbox" id="open-source" value ="open-source" name="project-type">Open Source Community
+                        </label>
+                        <label for="gitter"> 
+                            <input class="form-input" type="checkbox" id="gitter" value ="gitter-help-rooms" name="project-type">Gitter Help Rooms
+                        </label>
+                        <label for="videos">
+                            <input class="form-input" type="checkbox" id="videos" value ="videos" name="project-type">Videos
+                        </label>
+                        <label for="city-meetups"> 
+                            <input class="form-input" type="checkbox" id="city-meetups" value ="city-meetups" name="project-type">City Meetups
+                        </label>
+                        <label for="wiki"> 
+                            <input class="form-input" type="checkbox" id="wiki" value ="wiki" name="project-type">Wiki
+                        </label>
+                        <label for="forum"> 
+                            <input class="form-input" type="checkbox" id="forum" value ="forum" name="project-type">Forum
+                        </label>
+                        <label for="additional-courses"> 
+                            <input class="form-input" type="checkbox" id="additional-courses" value ="additional-courses" name="project-type">Additional Courses
+                        </label>
+                    <p>Any comments or suggestions?</p>    
+                    <textarea name="comment" placeholder="Enter your comment here..." rows="10" cols="50"></textarea>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </main>
+        </div>
+    </div> 
+</body>
+</html>
